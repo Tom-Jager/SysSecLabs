@@ -1,1 +1,0 @@
-{"virtualbox":{"/home/vagrant/labs/":{"disabled":false,"guestpath":"/home/vagrant/labs","hostpath":"/home/tom/FourthYear/SS/labs","__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/home/tom/FourthYear/SS/labs/VMs","disabled":false,"__vagrantfile":true}}}
