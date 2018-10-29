@@ -11,6 +11,7 @@ Vagrant.configure("2") do |config|
     vm3s.vm.provider "virtualbox" do |virtualbox|
        virtualbox.name = "SS-Server"
     end
+    config.vm.synced_folder "../", "/home/vagrant/labs/", disabled: false
 
   # File Provision
   vm3s.vm.provision "file", source: "patch.tar.gz", destination: "/tmp/patch.tar.gz"
@@ -78,6 +79,7 @@ Vagrant.configure("2") do |config|
     vm2c.vm.provider "virtualbox" do |virtualbox|
        virtualbox.name = "SS-Client"
     end
+    config.vm.synced_folder "../", "/home/vagrant/labs/", disabled: false
   end
 
 
@@ -96,6 +98,6 @@ Vagrant.configure("2") do |config|
       apt-get install -y netwox telnet tshark
       apt-get autoremove -y
     SHELL
-
+    config.vm.synced_folder "../", "/home/vagrant/labs/", disabled: false
  end
 end
